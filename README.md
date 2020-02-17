@@ -1,8 +1,11 @@
-# Snowflake
-Easy and fun way to work with SSH
+# Snowflake ![Java CI](https://github.com/subhra74/snowflake/workflows/Java%20CI/badge.svg?branch=master)
+Easy and fun way to work with remote servers over SSH.
 
-Snowflake is a graphical SSH client. It has a file browser, terminal emulator, resource/process manager, disk space analyzer, text editor, log viewer and lots of other helpful tools, which makes it easy to work with remote servers. It runs on Linux and Windows.
-Snowflake has been tested with Ubuntu server, CentOS, RHEL, OpenSUSE, FreeBSD, OpenBSD, NetBSD and HP-UX.
+
+
+
+Snowflake is a graphical SSH client. It has a enhanced SFTP file browser, SSH terminal emulator, remote resource/process manager, server disk space analyzer, remote text editor, huge remote log viewer and lots of other helpful tools, which makes it easy to work with remote servers. Snowflake provides functionality similar to web based control panels but, it works over SSH from local computer, hence no installation required on server. It runs on Linux and Windows.
+Snowflake has been tested with serveral Linux and UNIX servers, like Ubuntu server, CentOS, RHEL, OpenSUSE, FreeBSD, OpenBSD, NetBSD and HP-UX.
 
 <h3>Intended audience</h3>
 <p>The application is targeted mainly towards web/backend developers who often deploy/debug their code on remote servers and not overly fond of complex terminal based commands. It could also be useful for sysadmins as well who manages lots of remote servers manually.
@@ -23,13 +26,37 @@ Snowflake has been tested with Ubuntu server, CentOS, RHEL, OpenSUSE, FreeBSD, O
 
 <table>
   <tr>
+    <th>Versions</th>
     <th>Windows</th>
     <th>Ubuntu/Mint/Debian</th>
-    <th>Other Linux</th>
+    <th>Linux</th>
     <th>MacOS</th>
     <th>Other</th>
   </tr>
   <tr>
+    <td>
+      <a href="https://github.com/subhra74/snowflake/releases/tag/v1.0.4">v1.0.4</a>
+    </td>
+    <td>
+      <a href="https://github.com/subhra74/snowflake/releases/download/v1.0.4/snowflake.msi">MSI installer</a>
+    </td>
+    <td>
+      <a href="https://github.com/subhra74/snowflake/releases/download/v1.0.4/snowflake-1.0.4-setup-amd64.deb">DEB installer</a>
+    </td>
+    <td>
+      <a href="https://github.com/subhra74/snowflake/releases/download/v1.0.4/snowflake-1.0.4-setup-amd64.bin">Generic installer (64 bit)</a>
+    </td>
+    <td>
+      TBD
+    </td>
+    <td>
+      <a href="https://github.com/subhra74/snowflake/releases/download/v1.0.4/snowflake.jar">Portable JAR (Java 13)</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/subhra74/snowflake/releases/tag/v1.0.3">v1.0.3</a>
+    </td>
     <td>
       <a href="https://github.com/subhra74/snowflake/releases/download/v1.0.3/snowflake.msi">MSI installer</a>
     </td>
@@ -48,6 +75,11 @@ Snowflake has been tested with Ubuntu server, CentOS, RHEL, OpenSUSE, FreeBSD, O
   </tr>
 </table>
 
+<h2>Building from source:</h2>
+<pre> This is a standard maven project. If you have configured Java and Maven use: 
+ <b>mvn clean install</b> to build the project.
+ The jar will be created in target directory
+ </pre>
 
 <h2>Features:</h2>
 
